@@ -11,16 +11,15 @@
 					</IconTabFilter>
 					<!--<IconTabFilter id="projectsTab" text="{i18n>Projects}" key="Projects">-->
 					<!--	<mvc:XMLView viewName="TestNav.view.ResumeProjects"></mvc:XMLView>-->
-					<!--</IconTabFilter>-->
-					<IconTabFilter id="hobbiesTab" text="{i18n>Hobbies}" key="Hobbies">
-						<!--<Text text="{Hobbies}"/>-->
-					</IconTabFilter>
-					<IconTabFilter id="notesTab" text="{i18n>Notes}" key="Notes">
-					<!--	<Text text="{Notes}"/>-->
-					</IconTabFilter>
-					
-				</items>
-			</IconTabBar>
-		</content>
-	</Page>
+				</IconTabFilter>
+				<IconTabFilter id="hobbiesTab" text="{i18n>Hobbies}" key="Hobbies">
+					<Text text="{Hobbies}"/>
+				</IconTabFilter>
+				<IconTabFilter id="notesTab" text="{i18n>Notes}" key="Notes">
+					<Text text="{Notes}"/>
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+	</content>
+</Page>
 </mvc:View>
