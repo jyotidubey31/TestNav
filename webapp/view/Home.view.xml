@@ -1,0 +1,16 @@
+<mvc:View controllerName="TestNav.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="app">
+		<pages>
+			<Page id="employeeListPage" title="{i18n>EmployeeList}" class="sapUiResponsiveContentPadding">
+				<content>
+					<List id="employeeList" headerText="{i18n>ListOfAllEmployees}" items="{/Employees}">
+						<items>
+							<StandardListItem title="{FirstName} {LastName}" iconDensityAware="false" iconInset="false" type="Navigation" press="onListItemPressed"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

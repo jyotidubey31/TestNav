@@ -1,0 +1,31 @@
+<mvc:View controllerName="TestNav.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>DetailPage}" navButtonPress="goBack" showNavButton="true">
+				<content>
+					<Panel id="employeePanel" width="auto" class="sapUiResponsiveMargin sapUiNoContentPadding">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="{i18n>EmployeeIDColon} {EmployeeID}" level="H2"/>
+								<ToolbarSpacer/>
+								<Link text="{i18n>FlipToResume}" tooltip="{i18n>FlipToResume.tooltip}" press="onShowResume"/>
+							</Toolbar>
+						</headerToolbar>
+						<VBox>
+							<Text text="FirstName: {FirstName}"/>
+							<Text text="LastName: {LastName}"/>
+							<Text text="Address: {Address}"/>
+							<Text text="City: {City}"/>
+							<Text text="Region: {Region}"/>
+							<Text text="PostalCode: {PostalCode}"/>
+							<Text text="Country: {Country}"/>
+							<Text text="HomePhone: {HomePhone}"/>
+							<Text text="ResumeID: {ResumeID}"/>
+						</VBox>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
